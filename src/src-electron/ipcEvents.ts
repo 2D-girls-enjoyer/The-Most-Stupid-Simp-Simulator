@@ -1,0 +1,12 @@
+export const MAXIMIZE = 'a';
+export const MINIMIZE = 'b';
+export const CLOSE = 'c';
+export const ENTER_FULL_SCREEN = 'd';
+export const LEAVE_FULL_SCREEN = 'f';
+export const SET_FULL_SCREEN = 'g';
+export const GET_APP_PATH = 'h';
+export const OPEN_DONATION = 'i';
+export const SAVE_PTS = 'j';
+export const GET_PTS = 'k';
+export const GET_CHARS = 'l';
+export const GET_AUTHOR = 'm';

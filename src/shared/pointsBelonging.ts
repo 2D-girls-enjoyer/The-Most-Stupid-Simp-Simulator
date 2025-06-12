@@ -1,0 +1,1 @@
+export const VANNILA_GAME = '1';

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Most Stupid Simp Simulator.exe</title>
+  </head>
+  <body>
+    <div class="w-dvw h-dvh">
+      <div id="main-window" class="window h-full w-full bg-[#fcfcfe] flex flex-col">
+        <div id="frame-bar" class="draggable-window title-bar shrink-0">
+          <div class="flex items-center title-bar-text shrink-0 overflow-hidden whitespace-nowrap">
+            <div id="app-icon" class="icon mr-1"></div>
+            <span>The Most Stupid Simp Simulator.exe</span>
+          </div>
+          <div class="flex items-center justify-center gap-1">
+            <div onclick="window.app.setWindowMinimize()" class="w-[22px] h-[22px] hover:shadow-inner hover:shadow-white rounded-sm transition-all duration-75 active:opacity-70 box-border ring-0 outline-none active:shadow-black minimize"></div>
+            <div onclick="window.app.setWindowMaximize()" class="w-[22px] h-[22px] hover:shadow-inner hover:shadow-white rounded-sm transition-all duration-75 active:opacity-70 box-border ring-0 outline-none active:shadow-black fullsize"></div>
+            <div onclick="window.app.setWindowClose()" class="w-[22px] h-[22px] hover:shadow-inner hover:shadow-white rounded-sm transition-all duration-75 active:opacity-70 box-border ring-0 outline-none active:shadow-black close"></div>
+          </div>
+        </div>
+        <div id="game" class="w-full h-full"></div>
+      </div>
+    </div>
+    <!-- <script type="module" src="/src/src-electron/renderer.ts"></script> -->
+  </body>
+</html>

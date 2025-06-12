@@ -1,0 +1,54 @@
+{
+  "name": "the-most-stupid-simp-simulator",
+  "productName": "TheMostStupidSimpSimulator",
+  "version": "1.0.0",
+  "description": "Headpat and treat who you simp for",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package --arch=ia32",
+    "make": "electron-forge make --arch=ia32",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx ."
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.1",
+    "@electron-forge/maker-deb": "^7.6.1",
+    "@electron-forge/maker-rpm": "^7.6.1",
+    "@electron-forge/maker-squirrel": "^7.6.1",
+    "@electron-forge/maker-zip": "^7.6.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.1",
+    "@electron-forge/plugin-fuses": "^7.6.1",
+    "@electron-forge/plugin-webpack": "^7.6.1",
+    "@electron/fuses": "^1.8.0",
+    "@swc/core": "^1.10.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
+    "autoprefixer": "^10.4.20",
+    "css-loader": "^6.11.0",
+    "electron": "^36.3.2",
+    "eslint": "^8.57.1",
+    "eslint-plugin-import": "^2.31.0",
+    "fork-ts-checker-webpack-plugin": "^7.3.0",
+    "node-loader": "^2.1.0",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^3.3.4",
+    "swc-loader": "^0.2.6",
+    "tailwindcss": "^3.4.16",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "~4.5.4"
+  },
+  "keywords": [],
+  "author": {
+    "name": "2D Girls Fanclub",
+    "email": "anisaucecontents@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "pixi.js": "^8.10.1"
+  }
+}

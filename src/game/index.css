@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.window {
+  -webkit-font-smoothing: antialiased;
+}
+.title-bar {
+  font-family: Trebuchet MS;
+  background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+  padding: 3px 5px 3px 3px;
+  border-top: 1px solid #0831d9;
+  border-left: 1px solid #0831d9;
+  border-right: 1px solid #001ea0;
+  font-size: 13px;
+  text-shadow: 1px 1px #0f1089;
+  height: 32px;
+  color: white;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+.title-bar-text {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0;
+  margin-right: 24px;
+  padding-left: 3px ;
+}
+.minimize{
+  background-color: white;
+  background-image: url("./assets/minimize.svg");
+  -webkit-app-region: no-drag;
+}
+.fullsize{
+  background-color: white;
+  background-image: url("./assets/fullsize.svg");
+  -webkit-app-region: no-drag;
+}
+.close{
+  background-color: white;
+  background-image: url("./assets/close.svg");
+  -webkit-app-region: no-drag;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background-image: url("./assets/icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-app-region: no-drag;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.app-title {
+  color: white;
+}
