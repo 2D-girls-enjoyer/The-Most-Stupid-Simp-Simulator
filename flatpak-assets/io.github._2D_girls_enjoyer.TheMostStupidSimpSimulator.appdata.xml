@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github._2D_girls_enjoyer.TheMostStupidSimpSimulator</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>TheMostStupidSimpSimulator</name>
+  <summary>Headpat and treat who you simp for</summary>
+  <description>
+    <p>Literally the title of the game. It is stupid. It a good (questionable) pastime. And great to be proud of being seen playing it</p>
+  </description>
+  <categories>
+    <category>Game</category>
+  </categories>
+  <keywords>
+    <keyword>game</keyword>
+    <keyword>simulation</keyword>
+    <keyword>anime</keyword>
+  </keywords>
+  <icon type="cached">io.github._2D_girls_enjoyer.TheMostStupidSimpSimulator</icon>
+  <launchable type="desktop-id">io.github._2D_girls_enjoyer.TheMostStupidSimpSimulator.desktop</launchable>
+  <provides>
+    <binary>TheMostStupidSimpSimulator</binary>
+  </provides>
+  <url type="homepage">https://github.com/2D_girls_enjoyer/TheMostStupidSimpSimulator</url>
+  <developer_name>2D Girls Enjoyer</developer_name>
+  <content_rating type="oars-1.0">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="social-chat">none</content_attribute>
+  </content_rating>
+  <releases>
+    <release version="0.0.1" date="2025-06-21"></release>
+  </releases>
+</component>
