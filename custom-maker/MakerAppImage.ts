@@ -80,26 +80,26 @@ export class MakerAppImage extends MakerBase<MakerAppImageConfig> {
 
     // Create AppRun script
     const appRunContent = `#!/bin/bash
-    SELF=$(readlink -f "$0")
-    HERE=\${SELF%/*}
-    export PATH="\${HERE}/usr/bin/:\${PATH}"
-    export LD_LIBRARY_PATH="\${HERE}/usr/lib/:\${LD_LIBRARY_PATH}"
-    cd "\${HERE}/usr/lib/${appName}"
-    exec "./${binName}" "$@"`;
+  SELF=$(readlink -f "$0")
+  HERE=\${SELF%/*}
+  export PATH="\${HERE}/usr/bin/:\${PATH}"
+  export LD_LIBRARY_PATH="\${HERE}/usr/lib/:\${LD_LIBRARY_PATH}"
+  cd "\${HERE}/usr/lib/${appName}"
+  exec "./${binName}" "$@"`;
 
     await fs.writeFile(path.join(appDir, 'AppRun'), appRunContent);
     await fs.chmod(path.join(appDir, 'AppRun'), 0o755);
 
     // Create desktop file
     const desktopContent = `[Desktop Entry]
-    Name=${productName}
-    Exec=${binName}
-    Icon=${appName}
-    Type=Application
-    Categories=${(options.categories || ['Utility']).join(';')};
-    Comment=${description || ''}
-    GenericName=${options.genericName || productName}
-    StartupNotify=true${homepage ? `\nX-AppImage-Homepage=${homepage}` : ''}`;
+Name=${productName}
+Exec=${binName}
+Icon=${appName}
+Type=Application
+Categories=${(options.categories || ['Utility']).join(';')};
+Comment=${description || ''}
+GenericName=${options.genericName || productName}
+StartupNotify=true${homepage ? `\nX-AppImage-Homepage=${homepage}` : ''}`;
 
     await fs.writeFile(
       path.join(appDir, `${appName}.desktop`),
