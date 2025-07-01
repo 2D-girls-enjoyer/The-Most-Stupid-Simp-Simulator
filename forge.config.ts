@@ -30,18 +30,12 @@ const getMakers = () => {
             authors: '2D Girl Enjoyer',
             description: 'Headpat and treat who you simp for',
             exe: 'TheMostStupidSimpSimulator.exe',
-            setupIcon: path.resolve(__dirname, './icons/icon.ico'),
+            setupIcon: path.resolve(__dirname, 'icons', 'icon.ico'),
+            iconUrl: `file://${path.resolve(__dirname, 'icons', 'icon.ico')}`,
             noMsi: true,
             setupExe: 'TheMostStupidSimpSimulatorSetup.exe',
             skipUpdateIcon: false,
         });
-      });
-      break;
-
-    case 'zip':
-      addMaker('zip', () => {
-        const { MakerZIP } = require('@electron-forge/maker-zip');
-        return new MakerZIP({}, ['darwin']);
       });
       break;
 
@@ -72,20 +66,6 @@ const getMakers = () => {
             bin: 'TheMostStupidSimpSimulator',
             icon: 'icons/icon.png'
           }
-        });
-      });
-      break;
-
-    case 'rpm':
-      addMaker('rpm', () => {
-        const { MakerRpm } = require('@electron-forge/maker-rpm');
-        return new MakerRpm({
-          options: {
-            license: 'MIT',
-            description: 'Headpat and treat who you simp for.',
-            categories: ['Game'],
-            homepage: 'https://github.com/2D-girls-enjoyer/The-Most-Stupid-Simp-Simulator',
-          },
         });
       });
       break;
@@ -187,9 +167,6 @@ const config: ForgeConfig = {
       'assets',
       'characters'
     ],
-    win32metadata: {
-
-    }
   },
   rebuildConfig: {},
   makers: getMakers(),
