@@ -14,9 +14,11 @@ You can (or not) support this game by buying me a coffee on [ko-fi](https://ko-f
 
 Download the latest version for your platform:
 
-- **AppImage** (Linux): [Download AppImage](https://github.com/yourusername/the-most-stupid-simp-simulator/releases)
-- **Flatpak** (Linux): [Download Flatpak](https://github.com/yourusername/the-most-stupid-simp-simulator/releases)
-- **Squirrel** (Windows): [Download Squirrel Installer](https://github.com/yourusername/the-most-stupid-simp-simulator/releases)
+- **Squirrel** (64 bit - Windows): [Download Squirrel Installer](https://github.com/2D-girls-enjoyer/The-Most-Stupid-Simp-Simulator/releases/download/v0.0.1/TheMostStupidSimpSimulatorSetup-x64.exe)
+- **AppImage** (64 bit - Most Linux): [Download AppImage](https://github.com/2D-girls-enjoyer/The-Most-Stupid-Simp-Simulator/releases/download/v0.0.1/TheMostStupidSimpSimulator-0.0.1-x64.AppImage)
+- **Flatpak** (64 bit - Most Linux): [Download Flatpak](https://github.com/2D-girls-enjoyer/The-Most-Stupid-Simp-Simulator/releases/download/v0.0.1/io.github._2D_girls_enjoyer.TheMostStupidSimpSimulator_x64.flatpak)
+- **.deb** (64 bit - Debian, Linux Mint, Ubuntu): [Download deb](https://github.com/2D-girls-enjoyer/The-Most-Stupid-Simp-Simulator/releases/download/v0.0.1/themoststupidsimpsimulator_0.0.1_amd64.deb)
+
 
 
 
